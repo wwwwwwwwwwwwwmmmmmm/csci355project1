@@ -27,7 +27,7 @@ l) The product, service, and other kinds of information will be introduced
 
 m) ?????
 
-n) ?????
+n) We differentiate from other sites in that the food is customizable that many other sites don't provide
 
-o) ?????
+o) Once people have achieved the goal that sent them to our site, there could be common questions that relates to ingredients
 ```
