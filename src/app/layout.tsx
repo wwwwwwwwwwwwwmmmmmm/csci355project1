@@ -25,7 +25,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
             className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
         <header>
-            <nav>
+            <nav className={"flex space-x-4"}>
                 <a href="/">Home</a>
                 <a href="/menu">Menu</a>
                 <a href="/about">About Us</a>

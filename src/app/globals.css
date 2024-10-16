@@ -25,3 +25,16 @@ body {
         text-wrap: balance;
     }
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    font: 24px bold;
+    padding: 50px;
+}
