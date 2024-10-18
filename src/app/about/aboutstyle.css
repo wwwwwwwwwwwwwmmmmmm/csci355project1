@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    font-family: Lexend Deca, sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* center horizontally */
+    gap: 20px; /* adds space between flags */
+    margin-top: 20px;
+}
+
+/* taken from hw2 task3 */
+img {
+    width: 200px;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px black;
+    box-sizing: border-box;
+}
+
+footer {
+    margin-top: 15px;
+}
+
