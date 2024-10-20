@@ -1,0 +1,500 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffffb4;
+    padding: 10px 20px;
+}
+
+.logo img {
+    border-radius: 10px;
+    height: 50px;
+}
+
+body {
+    font-family: 'OPTICopperplate-Heavy', Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    background-image: url('images/location.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+h1, .search-container, .features, .reservation-container, .menu-section, .special-offer {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.intro-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 100%;
+    line-height: 1.2;
+}
+
+
+input[type="text"] {
+    font-size: 0.85em;
+}
+
+button {
+    font-size: 0.85em;
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.navbar li a {
+    display: block;
+    height: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-right: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar li a:first-child {
+    border-left: 1px solid black;
+}
+
+.navbar li a:hover {
+    background-color: #d2b48c;
+    color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.contact-btn {
+    color: white;
+    background-color: #a0a47e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn:hover {
+    background-color: #d2b48c;
+    color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/*Search section*/
+input[type="text"] {
+    padding: 10px;
+    width: 600px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #a0a47e;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d2b48c7e;
+}
+
+
+
+/* Styling for the new intro section */
+.intro-section {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin: 150px auto;
+    max-width: 1200px;
+    text-align: center;
+    background: none;
+}
+
+
+.intro-section .features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: none;
+}
+
+.intro-section .features .feature {
+    text-align: center;
+    color: #fff;
+}
+
+
+/*Book now section*/
+.reservation-container {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffffc4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 90px;
+}
+
+.reservation-container h2 {
+    padding: 1%;
+    margin: 0;
+    font-size: 1.5em;
+    flex-shrink: 0;
+}
+
+.reservation-container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 0;
+    width: 100%;
+}
+
+.reservation-container input[type="date"],
+.reservation-container select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+.reservation-container button {
+    background-color: #a0a47e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.book-now-btn {
+    width: 150px;
+    height: 40px;
+    font-size: 0.9em;
+}
+
+.reservation-container button:hover {
+    background-color: #d2b48c;
+}
+
+/*Menu section*/
+.menu-section {
+    margin: 40px;
+    text-align: center;
+}
+
+.menu-section h2 {
+    color: white;
+    font-size: 2em;
+}
+
+.menu-section p {
+    color: white;
+    font-size: 1em;
+}
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.menu-card {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    min-height: 400px;
+}
+
+.price-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menu-image {
+    width: 100%;      
+    height: 250px;    
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+
+
+.menu-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.menu-card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.order-btn {
+    display: block;
+    width: 50%;
+    padding: 10px 0;
+    margin: 10px auto 0;
+    background-color: #a0a47e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.order-btn:hover,
+.view-all-btn:hover,
+.order-now-btn:hover {
+    background-color: #d2b48c;
+    transform: translateY(-2px);
+}
+
+.view-all-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color:#a0a47e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/*Special offer section*/
+.special-offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #f0f0f0b4;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.offer-text {
+    max-width: 50%;
+}
+
+.offer-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.offer-text h1 {
+    font-size: 3em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.offer-text p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.order-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#a0a47e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.offer-image {
+    max-width: 40%;
+    transform: translateX(-100px); 
+}
+
+.offer-image img {
+    width: 700px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*Why Choose Us section*/
+.why-choose-us {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.why-choose-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.icons-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon-item {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.icon-item i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.icon-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+
+/*Customer reviews section*/
+.customer-reviews {
+    text-align: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+}
+
+.customer-reviews h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.reviews-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-control {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #000;
+    padding: 0 20px;
+    transition: color 0.3s;
+}
+
+.carousel-control:hover {
+    color: #d2b48c;
+}
+
+.review-card {
+    flex: 0 0 300px; 
+    box-sizing: border-box;
+    margin: 0 15px; 
+}
+
+
+.profile-picture img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden; 
+    gap: 30px; 
+    width: calc(300px * 3 + 30px * 2); 
+    margin: auto; 
+}
+.review-card:hover {
+    transform: translateY(-5px);
+}
+.review-card h4 {
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4em;
+}
+
+.carousel-control.prev {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control.next {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ 
