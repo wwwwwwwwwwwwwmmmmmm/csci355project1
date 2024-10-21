@@ -4,6 +4,10 @@ import "./globals.css";
 import NavBar from "@/app/components/NavBar";
 import React from "react";
 import Footer from "@/app/components/Footer";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import {config} from "@fortawesome/fontawesome-svg-core";
+
+config.autoAddCss = false;
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",

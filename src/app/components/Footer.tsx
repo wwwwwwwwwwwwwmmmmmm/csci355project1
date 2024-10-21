@@ -1,4 +1,11 @@
 import styles from "./Footer.module.css"
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {
+    faFacebookSquare,
+    faGooglePlusSquare,
+    faInstagramSquare,
+    faTwitterSquare
+} from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
     return (
@@ -37,10 +44,10 @@ export default function Footer() {
                 <div className={styles.footerSection}>
                     <h3>Connect With Us</h3>
                     <div className={styles.socialIcons}>
-                        <a href="#"><i className="fab fa-facebook-square"/></a>
-                        <a href="#"><i className="fab fa-twitter-square"/></a>
-                        <a href="#"><i className="fab fa-google-plus-square"/></a>
-                        <a href="#"><i className="fab fa-instagram-square"/></a>
+                        <a href="#"><FontAwesomeIcon icon={faFacebookSquare} size="1x"/></a>
+                        <a href="#"><FontAwesomeIcon icon={faTwitterSquare} size="1x"/></a>
+                        <a href="#"><FontAwesomeIcon icon={faGooglePlusSquare} size="1x"/></a>
+                        <a href="#"><FontAwesomeIcon icon={faInstagramSquare} size="1x"/></a>
                     </div>
                 </div>
             </div>

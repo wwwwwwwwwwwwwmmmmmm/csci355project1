@@ -54,7 +54,10 @@
         text-align: left;
     }
 
-    & .social-icons {
+    & .socialIcons {
+        display: flex;
+        gap: 5px;
+
         & a {
             margin-right: 15px;
             font-size: 30px;
