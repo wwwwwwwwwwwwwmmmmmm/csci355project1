@@ -1,0 +1,86 @@
+.customerReviews {
+    text-align: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+
+    & h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+}
+
+.reviewsCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carouselControl {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #000;
+    padding: 0 20px;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #d2b48c;
+    }
+
+    &.prev {
+        position: absolute;
+        left: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &.next {
+        position: absolute;
+        right: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.reviewCard {
+    flex: 0 0 300px;
+    box-sizing: border-box;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    & h4 {
+        font-weight: bold;
+        margin: 0 0 10px;
+    }
+
+    & p {
+        font-size: 0.9em;
+        color: #555;
+        line-height: 1.4em;
+    }
+}
+
+.profilePicture img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.reviewsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    gap: 30px;
+    width: calc(300px * 3 + 30px * 2);
+    margin: auto;
+}

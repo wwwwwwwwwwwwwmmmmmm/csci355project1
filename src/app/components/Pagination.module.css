@@ -1,0 +1,37 @@
+.paginationSection {
+    margin: 20px 40px;
+    /*justify-content: center;*/
+    /*margin-top: 2rem;*/
+    /*display: flex;*/
+}
+
+.pagination {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    & a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        border: 1px solid black;
+        margin: 0 4px;
+        background-color: white;
+
+        &:hover {
+            background-color: #ddd;
+        }
+
+        &.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+    }
+
+    & .prev,
+    & .next {
+        font-weight: bold;
+    }
+}

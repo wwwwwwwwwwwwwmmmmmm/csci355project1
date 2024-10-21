@@ -1,0 +1,8 @@
+.contactDetails {
+    text-align: center;
+    margin-top: px;
+    background-color: rgba(255, 255, 255, 0.582); /* Set background to white */
+    color: black; /* Set text color to black */
+    padding: 20px; /* Add some padding for better spacing */
+    border-radius: 10px; /* Optional: to round the corners */
+}

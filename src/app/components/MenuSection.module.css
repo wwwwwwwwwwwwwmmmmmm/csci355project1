@@ -1,0 +1,91 @@
+.menuSection {
+    margin: 40px 40px 20px 40px;
+    text-align: center;
+
+    & h2 {
+        color: white;
+        font-size: 2em;
+    }
+
+    & p {
+        color: white;
+        font-size: 1em;
+    }
+
+}
+
+.menuGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.menuCard {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    min-height: 400px;
+
+    & h3 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    & p {
+        font-size: 0.9em;
+        color: #555;
+    }
+}
+
+.priceTag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menuImage {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.buttonOrder {
+    display: block;
+    width: 50%;
+    padding: 10px 0;
+    margin: 10px auto 0;
+    background-color: #a0a47e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.buttonViewAll {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #a0a47e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttonOrder:hover,
+.buttonViewAll:hover,
+.buttonOrderNow:hover {
+    background-color: #d2b48c;
+    transform: translateY(-2px);
+}

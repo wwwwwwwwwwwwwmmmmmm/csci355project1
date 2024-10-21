@@ -1,0 +1,60 @@
+.reservationContainer {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffffc4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 90px;
+
+    & h2 {
+        padding: 1%;
+        margin: 0;
+        font-size: 1.5em;
+        flex-shrink: 0;
+    }
+
+    & form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin: 0;
+        width: 100%;
+    }
+
+    & input[type="date"],
+    & select {
+        padding: 10px;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        height: 40px;
+        width: 350px;
+        box-sizing: border-box;
+    }
+
+    & button {
+        background-color: #a0a47e;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #d2b48c;
+        }
+    }
+}
+
+.buttonBookNow {
+    width: 150px;
+    height: 40px;
+    font-size: 0.9em;
+}

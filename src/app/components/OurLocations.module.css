@@ -1,0 +1,33 @@
+.tableSection {
+    margin: 50px auto;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.582); /* Set background to white */
+    color: black; /* Set text color to black */
+    padding: 20px; /* Add some padding for better spacing */
+    border-radius: 10px; /* Optional: to round the corners */
+}
+
+.locationTable, .locationTh, .locationTd {
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0); /* Keep table background white */
+    color: black; /* Keep text black */
+}
+
+.tableSection {
+    margin: 50px auto;
+    width: 60%;
+}
+
+.locationTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.locationTable, .locationTh, .locationTd {
+    border: 1px solid black;
+}
+
+.locationTh, .locationTd {
+    padding: 15px;
+    text-align: center;
+}

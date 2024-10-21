@@ -1,8 +1,13 @@
+import ContactUs from "@/app/components/ContactUs";
+import ContactDetails from "@/app/components/ContactDetails";
+import OurLocations from "@/app/components/OurLocations";
+
 export default function Contact() {
     return (
         <div>
-            <h1>Contact Us</h1>
-            <p>Feel free to reach out to us via the contact page.</p>
+            <ContactUs/>
+            <ContactDetails/>
+            <OurLocations/>
         </div>
     );
 }

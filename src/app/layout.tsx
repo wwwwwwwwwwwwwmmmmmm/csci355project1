@@ -1,6 +1,9 @@
 import type {Metadata} from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import NavBar from "@/app/components/NavBar";
+import React from "react";
+import Footer from "@/app/components/Footer";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -21,20 +24,13 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="en">
-        <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-        <header>
-            <nav className={"flex space-x-4"}>
-                <a href="/">Home</a>
-                <a href="/menu">Menu</a>
-                <a href="/about">About Us</a>
-                <a href="/contact">Contact Us</a>
-            </nav>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <header className={"nav"}>
+            <NavBar/>
         </header>
         <main>{children}</main>
         {/* Children is rendered here */}
-        <footer>© 2024 My App</footer>
+        <Footer/>
         </body>
         </html>
     );

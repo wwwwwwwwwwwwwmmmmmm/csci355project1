@@ -2,39 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --background: #ffffff;
-    --foreground: #171717;
+@font-face {
+    font-family: 'OPTICopperplate-Heavy';
+    src: url('fonts/OPTICopperplate-Heavy.otf') format('opentype');
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
+p, a, button, input, nav, footer, .navbar li a, .buttonContact, .buttonOrder, .buttonViewAll, .buttonOrderNow {
+    font-family: 'OPTICopperplate-Heavy', Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4, h5, h6 {
+    font-size: 1.25em;
 }
 
 body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'OPTICopperplate-Heavy', Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    background-image: url('assets/images/location.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1;
 }
 
-@layer utilities {
-    .text-balance {
-        text-wrap: balance;
+h1, .searchContainer, .features, .reservationContainer, .menuSection, .specialOffer {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+input[type="text"] {
+    font-size: 0.85em;
+}
+
+button {
+    font-size: 0.85em;
+}
+
+/*Search section*/
+input[type="text"] {
+    padding: 10px;
+    width: 600px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #a0a47e;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    & :hover {
+        background-color: #d2b48c7e;
     }
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-}
-
-div {
-    display: flex;
-    justify-content: center;
-    font: 24px bold;
-    padding: 50px;
+.introSection {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 150px auto;
+    max-width: 1200px;
+    text-align: center;
+    background: none;
 }
