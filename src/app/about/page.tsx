@@ -1,8 +1,7 @@
+import Flags from "@/app/components/Flags";
 
 export default function About() {
     return (
-        <div>
-
-        </div>
+        <Flags/>
     );
 }

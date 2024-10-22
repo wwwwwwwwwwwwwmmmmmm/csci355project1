@@ -1,0 +1,31 @@
+.flagsSection {
+    margin: 40px 40px 20px 40px;
+    align-items: center;
+
+    & h2 {
+        color: white;
+        font-size: 2em;
+    }
+
+    & p {
+        color: white;
+        font-size: 1em;
+    }
+
+    & .flags {
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        background: none;
+
+        & .flag {
+            text-align: center;
+            color: #fff;
+
+            & p {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
