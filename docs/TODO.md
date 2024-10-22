@@ -59,3 +59,4 @@
 - Make footer stick to bottom if body doesnt fill page
 - Food search implementation
 - Clean up home/contact us page
+- Fix mobile viewing
