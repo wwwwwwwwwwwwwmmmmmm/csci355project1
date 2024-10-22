@@ -1,3 +1,4 @@
+# Project 1 Directions
 1. ~~Write a white paper outlining the following concepts and answer the following questions:~~
     1. ~~what is your business~~
     2. ~~what do you produce/make/offer/sell~~
@@ -49,3 +50,12 @@
     5. ?
     6. ?
 9. All your group names should appear on the website.
+
+# TODO
+
+- Add more menu items
+- Add more reviews
+- Links for footer
+- Make footer stick to bottom if body doesnt fill page
+- Food search implementation
+- Clean up home/contact us page
