@@ -1,8 +1,11 @@
+"use client"
+
 import styles from "./CustomerReviews.module.css"
 import {StaticImageData} from "next/dist/shared/lib/get-img-props";
 import women from "@/app/assets/images/women.png";
 import man from "@/app/assets/images/man.png";
 import Image from "next/image";
+import {useState} from "react";
 
 
 class Review {
@@ -29,9 +32,31 @@ const reviews: Review[] = [
 ]
 
 export default function CustomerReviews() {
-    const generatedReviews = () => {
-        return reviews.map((item) => (
-            <div key={item.id} className={styles.reviewCard}>
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const nextIndex = () => {
+        if (currentIndex >= reviews.length - 1) {
+            return setCurrentIndex(0);
+        } else {
+            return setCurrentIndex(currentIndex + 1);
+        }
+    }
+
+    const prevIndex = () => {
+        if (currentIndex <= 0) {
+            return setCurrentIndex(reviews.length - 1);
+        } else {
+            return setCurrentIndex(currentIndex - 1);
+        }
+    }
+
+    const getReviewElement = (item: Review) => {
+        return (
+            <div
+                key={item.id}
+                className={styles.reviewCard}
+                style={{display: 'block'}}
+            >
                 <div className={styles.profilePicture}>
                     <Image
                         src={item.imageData.src}
@@ -45,25 +70,50 @@ export default function CustomerReviews() {
                             borderRadius: "50%",
                             border: "2px solid #000"
                         }}
-
                     />
                 </div>
                 <h4>{item.name}</h4>
                 <p>{item.review}</p>
             </div>
-        ));
+        );
     }
+    const generatedReviews = () => {
+        const previousIndex = currentIndex === 0 ? reviews.length - 1 : currentIndex - 1;
+        const nextIndex = currentIndex === reviews.length - 1 ? 0 : currentIndex + 1;
+        return [
+            getReviewElement(reviews[previousIndex]),
+            getReviewElement(reviews[currentIndex]),
+            getReviewElement(reviews[nextIndex]),
+        ];
+    };
+
 
     return (
         <div className={styles.customerReviews}>
             <h2>Customer Reviews</h2>
             <div className={styles.reviewsCarousel}>
-                <button className={styles.prev}>‹</button>
+                <button
+                    className={styles.prev}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        nextIndex();
+                    }}
+                >
+                    ‹
+                </button>
                 <div className={styles.reviewsContainer}>
                     {/* Customer review cards */}
                     {generatedReviews()}
                 </div>
-                <button className={styles.next}>›</button>
+                <button
+                    className={styles.next}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        prevIndex()
+                    }}
+                >
+                    ›
+                </button>
             </div>
         </div>
     )

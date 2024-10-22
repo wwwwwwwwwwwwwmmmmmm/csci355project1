@@ -1,13 +1,13 @@
-import styles from "./Pagination.module.css";
+import styles from "./MenuPagination.module.css";
 
-interface PaginationProps {
+interface MenuPaginationProps {
     currentPage: number;
     setCurrentPage: (page: number) => void;
     totalItems: number;
     itemsPerPage: number;
 }
 
-export default function MenuPagination({currentPage, setCurrentPage, totalItems, itemsPerPage}: PaginationProps) {
+export default function MenuPagination({currentPage, setCurrentPage, totalItems, itemsPerPage}: MenuPaginationProps) {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
     const handlePageClick = (pageNumber: number) => {
