@@ -50,6 +50,19 @@ export default function Footer() {
                         <a href="#"><FontAwesomeIcon icon={faInstagramSquare} size="1x"/></a>
                     </div>
                 </div>
+                
+                <div className={styles.footerSection}>
+                    <h3 style={{color: 'red'}}>Group Members</h3>
+                    <ul>
+                        <li>William Mah</li>
+                        <li>Orrin S Anderson III</li>
+                        <li>Rahnuma Mostafa</li>
+                        <li>Bertram Huang</li>
+                        <li>Abdullah Sabbir</li>
+                        <li>Saibyasachi, Ruhan</li>
+                    </ul>
+                </div>
+    
             </div>
             <footer className={`${styles.bottomFooter} bg-black shadow dark:bg-black text-center`}>
                 <div className={styles.bottomFooterContainer}>
