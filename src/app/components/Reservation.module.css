@@ -1,60 +1,61 @@
 .reservationContainer {
-    margin: 20px;
-    padding: 10px;
     background-color: #ffffffc4;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 100%;
     display: flex;
-    align-items: center;
-    gap: 20px;
-    min-height: 90px;
+    flex-wrap: wrap;
+    flex-basis: calc(20%);
 
     & h2 {
-        padding: 1%;
-        margin: 0;
-        font-size: 1.5em;
-        flex-shrink: 0;
+        text-align: center;
+        margin-right: 20px;
+        align-content: center;
     }
 
     & form {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 100px;
-        margin: 0;
-        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: auto;
+        column-gap: 50px;
     }
 
     & input[type="date"],
     & select {
+        flex: 1;
+        margin: 0 10px 0 0;
         padding: 10px;
-        font-size: 1em;
-        border-radius: 5px;
         border: 1px solid #ccc;
-        height: 40px;
-        width: 350px;
-        box-sizing: border-box;
+        border-radius: 4px;
     }
 
     & button {
         background-color: #a0a47e;
         color: #fff;
+        padding: 10px;
         border: none;
         border-radius: 5px;
-        padding: 10px 20px;
         cursor: pointer;
+        font-size: 16px;
 
         &:hover {
-            background-color: #d2b48c;
+            background-color: #45a049;
         }
     }
 }
 
 .buttonBookNow {
     width: 150px;
-    height: 40px;
     font-size: 0.9em;
 }
+
+@media (max-width: 768px) {
+    .reservationContainer select {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+

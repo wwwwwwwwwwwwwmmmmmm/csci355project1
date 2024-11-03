@@ -1,14 +1,24 @@
-.imageContainer {
-    display: flex;
-    align-items: center;
-}
-
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #ffffffb4;
     padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    transition: background-color 0.3s;
+
+    &.active {
+        background-color: #ffffffff;
+    }
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    width: fit-content;
 }
 
 .navbar {

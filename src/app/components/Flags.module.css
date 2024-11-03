@@ -3,6 +3,7 @@
     align-items: center;
 
     & h2 {
+        margin-top: 125px;
         color: white;
         font-size: 2em;
     }
