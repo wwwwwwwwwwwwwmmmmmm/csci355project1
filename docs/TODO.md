@@ -46,7 +46,7 @@
     1. ~~Carousel~~
    2. ~~Auto Text Effect~~
    3. ~~Sticky Navbar~~
-    4. ?
+   4. ~~Animation Timeout Effect~~
     5. ?
     6. ?
        
