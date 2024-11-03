@@ -44,8 +44,8 @@
 7. Your CSS must be extensive and consistent with your business model and design.
 8. You must implement the ideas in at least six examples from the Udemy course.
     1. ~~Carousel~~
-    2. ?
-    3. ?
+   2. ~~Auto Text Effect~~
+   3. ~~Sticky Navbar~~
     4. ?
     5. ?
     6. ?
