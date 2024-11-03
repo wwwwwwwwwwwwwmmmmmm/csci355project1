@@ -15,10 +15,8 @@ export default function NavBar() {
         if (myElementRef.current) {
             const offsetHeight = myElementRef.current.offsetHeight;
             if (window.scrollY > offsetHeight + 150) {
-                console.log("ACTIVE")
                 setIsActive(true);
             } else {
-                console.log("INACTIVE")
                 setIsActive(false);
             }
         }

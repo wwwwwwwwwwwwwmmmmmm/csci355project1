@@ -1,16 +1,47 @@
+"use client"
+
+import {menuItems} from "@/app/components/MenuSection";
+
 import Image from "next/image";
 import clock from "@/app/assets/images/clock.png";
 import house from "@/app/assets/images/house.png";
 import car from "@/app/assets/images/car.png";
-
 import styles from "./IntroSection.module.css"
+import {useEffect, useState} from "react";
 
 export default function IntroSection() {
+
+    const [placeholderText, setPlaceholderText] = useState('');
+    const [currentPlaceholderIndex, setCurrentPlaceholderIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const fullPlaceholder = menuItems[currentPlaceholderIndex].name;
+        const typingInterval = setInterval(() => {
+            if (currentIndex < fullPlaceholder.length) {
+                setPlaceholderText((prev) => prev + fullPlaceholder[currentIndex]);
+                setCurrentIndex((prev) => prev + 1);
+            } else {
+                clearInterval(typingInterval);
+                setTimeout(() => {
+                    setCurrentPlaceholderIndex((prev) => (prev + 1) % menuItems.length);
+                    setPlaceholderText('');
+                    setCurrentIndex(0);
+                }, 2000);
+            }
+        }, 250); // Speed of typing
+
+        return () => clearInterval(typingInterval); // Cleanup interval on unmount
+    }, [currentIndex, currentPlaceholderIndex]);
+
     return (
         <section className={styles.introSection}>
             <h1>Organic Foods Made <br/> Easy &amp; Healthy</h1>
             <div className="searchContainer">
-                <input type="text" placeholder="Search your food here"/>
+                <input type="text"
+                       placeholder={placeholderText}
+                       onBlur={() => setPlaceholderText('')}
+                />
                 <button type="button">Search</button>
             </div>
             <div className={styles.features}>
