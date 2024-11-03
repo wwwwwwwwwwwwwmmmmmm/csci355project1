@@ -38,10 +38,7 @@ export default function IntroSection() {
         <section className={styles.introSection}>
             <h1>Organic Foods Made <br/> Easy &amp; Healthy</h1>
             <div className="searchContainer">
-                <input type="text"
-                       placeholder={placeholderText}
-                       onBlur={() => setPlaceholderText('')}
-                />
+                <input type="text" placeholder={placeholderText}/>
                 <button type="button">Search</button>
             </div>
             <div className={styles.features}>
