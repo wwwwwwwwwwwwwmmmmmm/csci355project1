@@ -15,7 +15,7 @@ export default function Footer() {
                     <h3>Popular Pages</h3>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="/about">About Us</a></li>
                         <li><a href="#">Our Chefs</a></li>
                         <li><a href="#">Our Blog</a></li>
                         <li><a href="#">FAQs</a></li>
@@ -25,12 +25,12 @@ export default function Footer() {
                 <div className={styles.footerSection}>
                     <h3>Popular Categories</h3>
                     <ul>
-                        <li><a href="#">Sushi</a></li>
-                        <li><a href="#">Dim Sum</a></li>
-                        <li><a href="#">Ramen</a></li>
-                        <li><a href="#">Teriyaki</a></li>
-                        <li><a href="#">Kimchi</a></li>
-                        <li><a href="#">Matcha Desserts</a></li>
+                        <li><a href="/menu">Sushi</a></li>
+                        <li><a href="/menu">Dim Sum</a></li>
+                        <li><a href="/menu">Ramen</a></li>
+                        <li><a href="/menu">Teriyaki</a></li>
+                        <li><a href="/menu">Kimchi</a></li>
+                        <li><a href="/menu">Matcha Desserts</a></li>
                     </ul>
                 </div>
                 <div className={styles.footerSection}>

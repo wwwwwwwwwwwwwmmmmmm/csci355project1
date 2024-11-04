@@ -21,19 +21,20 @@
     13. ~~what is special about what you offer that differentiates you from other sites that offer something similar?~~
     14. ~~once people have achieved the goal that sent them to your site, are there common questions people ask about
         this subject area~~
-2. Your white paper should explain how you implemented concepts in visual hierarchy, grouping, and similarity in your
-   design
-3. Your white paper should take another website (that already exists on the web) and analyze it based on the above (i.e.
+2. ~~Your white paper should explain how you implemented concepts in visual hierarchy, grouping, and similarity in your
+   design~~
+3. ~~Your white paper should take another website (that already exists on the web) and analyze it based on the above (
+   i.e.
    answer all the questions [1a-1o] for your competitors website as well), creating a wireframe for it as well. You may
-   use just their homepage for their wireframe. You may use a tool to build the wireframe
-4. Your website should have at least four pages (all hosted locally, that can be accessed from one another). You must
-   create a wireframe for each page.
-    1. ~~Home Page~~ - Wireframe
-    2. About - Wireframe
-    3. ~~Menu~~ - Wireframe
-    4. ~~Contact Us~~ - Wireframe
-5. You must create a gray paper that explains the HTML, CSS, and JS that you did. It should outline at least 30
-   different points, showing the code and explaining what it does.
+   use just their homepage for their wireframe. You may use a tool to build the wireframe~~
+4. ~~Your website should have at least four pages (all hosted locally, that can be accessed from one another). You must
+   create a wireframe for each page.~~
+   1. ~~Home Page~~ - ~~Wireframe~~
+   2. ~~About~~ - ~~Wireframe~~
+   3. ~~Menu~~ - ~~Wireframe~~
+   4. ~~Contact Us~~ - ~~Wireframe~~
+5. ~~You must create a gray paper that explains the HTML, CSS, and JS that you did. It should outline at least 30
+   different points, showing the code and explaining what it does.~~
 6. ~~Your HTML must include a minimum of one table, links, two lists, five images, a navigation bar, three forms (text
    box, radio button, checkbox, submit, and button), and anything else you like.~~
     1. ~~Table (Contact Us)~~
