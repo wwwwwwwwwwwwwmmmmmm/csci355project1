@@ -1,4 +1,5 @@
 # Project 1 Directions
+
 1. ~~Write a white paper outlining the following concepts and answer the following questions:~~
     1. ~~what is your business~~
     2. ~~what do you produce/make/offer/sell~~
@@ -44,12 +45,12 @@
 7. Your CSS must be extensive and consistent with your business model and design.
 8. You must implement the ideas in at least six examples from the Udemy course.
     1. ~~Carousel~~
-   2. ~~Auto Text Effect~~
-   3. ~~Sticky Navbar~~
-   4. ~~Animation Timeout Effect~~
-    5. ?
+    2. ~~Auto Text Effect~~
+    3. ~~Sticky Navbar~~
+    4. ~~Animation Timeout Effect~~
+    5. ~~Incrementing Counter~~
     6. ?
-       
+
 9.~~All your group names should appear on the website~~.
 
 # TODO

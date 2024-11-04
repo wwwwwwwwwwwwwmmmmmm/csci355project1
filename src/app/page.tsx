@@ -12,12 +12,12 @@ export default function Home() {
     return (
         <div>
             <IntroSection/>
+            <SpecialOffer/>
             <Reservation/>
             <MenuSection currentPage={1} itemsPerPage={4}/>
             <Link href={"/menu"}>
                 <button type="button" className={styles.buttonViewAll}>View All</button>
             </Link>
-            <SpecialOffer/>
             <WhyChooseUs/>
             <CustomerReviews/>
         </div>
