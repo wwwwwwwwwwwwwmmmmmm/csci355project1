@@ -44,6 +44,18 @@ export const menuItems: MenuItem[] = [
     new MenuItem(realfood, 15, "Beef Stir-fried", "Beef", 15),
     new MenuItem(gentao, 18, "General tso's chicken", "Chicken", 30),
     new MenuItem(shrimp, 15, "Shrimp fried Rice", "Shrimp", 20),
+    new MenuItem(realfood, 15, "Beef Stir-fried", "Beef", 15),
+    new MenuItem(gentao, 18, "General tso's chicken", "Chicken", 30),
+    new MenuItem(soupdump, 20, "Soup Dumplings", "Dumplings", 20), 
+    new MenuItem(shrimp, 15, "Shrimp fried Rice", "Shrimp", 20),
+    new MenuItem(realfood, 15, "Beef Stir-fried", "Beef", 15),
+    new MenuItem(soupdump, 20, "Soup Dumplings", "Dumplings", 20),
+    new MenuItem(gentao, 18, "General tso's chicken", "Chicken", 30),
+    new MenuItem(shrimp, 15, "Shrimp fried Rice", "Shrimp", 20),
+    new MenuItem(realfood, 15, "Beef Stir-fried", "Beef", 15),
+    new MenuItem(gentao, 18, "General tso's chicken", "Chicken", 30),
+    new MenuItem(soupdump, 20, "Soup Dumplings", "Dumplings", 20), 
+    new MenuItem(shrimp, 15, "Shrimp fried Rice", "Shrimp", 20),  
 ]
 
 export default function MenuSection({currentPage, itemsPerPage}: MenuSectionProps) {
