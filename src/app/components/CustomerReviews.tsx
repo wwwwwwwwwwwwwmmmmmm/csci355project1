@@ -29,6 +29,12 @@ const reviews: Review[] = [
     new Review(man, "David Martinez", "Every dish feels like it’s been crafted with care. Highly recommend!"),
     new Review(women, "Emily Wright", "So fresh and flavorful! Zen Bites is always a treat."),
     new Review(man, "Alex Patel", "Impeccable service and food that leaves you craving more. A must-try!"),
+    new Review(man, "William Jack", "The prices are reasonable especially considering the quality of the food and the generous portions."),
+    new Review(women, "Sophia Ana", "This is a delightful dining destination for anyone craving authentic foods"),
+    new Review(women, "Isabella Aurora", "This restaurant exceeded my expectations with its commitment to fresh, delicious food and a welcoming atmosphere."),
+    new Review(man, "Benjamin Lucas", "The service of Zen Bites was exceptional. Highly recommend!"),
+    new Review(man, "Alexender Liam", "My experience at Zen Bites was outstanding. The combination of delicious food, excellent service, and a lovely ambiance made it a memorable evening."),
+    
 ]
 
 export default function CustomerReviews() {
