@@ -34,22 +34,22 @@
     4. ~~Contact Us~~ - Wireframe
 5. You must create a gray paper that explains the HTML, CSS, and JS that you did. It should outline at least 30
    different points, showing the code and explaining what it does.
-6. Your HTML must include a minimum of one table, links, two lists, five images, a navigation bar, three forms (text
-   box, radio button, checkbox, submit, and button), and anything else you like.
+6. ~~Your HTML must include a minimum of one table, links, two lists, five images, a navigation bar, three forms (text
+   box, radio button, checkbox, submit, and button), and anything else you like.~~
     1. ~~Table (Contact Us)~~
     2. ~~Links (Navigation Bar)~~
-    3. Lists (Navigation Bar?)
+   3. ~~Lists (Footer)~~
     4. ~~Five Images (Home Page/Menu/Special Offer/Reviews)~~
     5. ~~Navigation Bar~~
     6. ~~Three Forms (Contact Us/Book a table)~~
-7. Your CSS must be extensive and consistent with your business model and design.
-8. You must implement the ideas in at least six examples from the Udemy course.
+7. ~~Your CSS must be extensive and consistent with your business model and design.~~
+8. ~~You must implement the ideas in at least six examples from the Udemy course.~~
     1. ~~Carousel~~
     2. ~~Auto Text Effect~~
     3. ~~Sticky Navbar~~
     4. ~~Animation Timeout Effect~~
     5. ~~Incrementing Counter~~
-    6. ?
+   6. ~~Movie App~~
 
 9.~~All your group names should appear on the website~~.
 
