@@ -29,10 +29,6 @@
     padding: 0 20px;
     transition: color 0.3s;
 
-    &:hover {
-        color: #d2b48c;
-    }
-
     &.prev {
         position: absolute;
         left: -40px;

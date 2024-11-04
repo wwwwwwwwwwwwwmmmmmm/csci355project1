@@ -11,7 +11,6 @@ export default function Footer() {
     return (
         <>
             <div className={styles.footerContainer}>
-                {/*TODO*/}
                 <div className={styles.footerSection}>
                     <h3>Popular Pages</h3>
                     <ul>
