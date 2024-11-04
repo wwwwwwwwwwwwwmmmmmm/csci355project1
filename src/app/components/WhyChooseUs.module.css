@@ -2,6 +2,7 @@
     text-align: center;
     padding: 40px;
     background-color: #f8f8f8;
+    margin: 40px 0;
 
     & h2 {
         font-size: 2em;
